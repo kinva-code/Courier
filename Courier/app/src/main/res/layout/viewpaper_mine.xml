@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Mine"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorGray"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/account_head"
+            android:layout_margin="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/pig"
+            app:riv_oval="true"></com.makeramen.roundedimageview.RoundedImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/user_name"
+                android:textSize="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <TextView
+                android:text="简介：暂无介绍"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorGray"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/account_manage"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:text="账号管理"
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="25dp"></TextView>
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/rightarrow"></ImageView>
+    </LinearLayout>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/account_message"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:text="账号信息"
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="25dp"></TextView>
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/rightarrow"></ImageView>
+    </LinearLayout>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/about_help"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:text="关于帮助"
+            android:textSize="15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="25dp"></TextView>
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/rightarrow"></ImageView>
+    </LinearLayout>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"></LinearLayout>
+
+</LinearLayout>

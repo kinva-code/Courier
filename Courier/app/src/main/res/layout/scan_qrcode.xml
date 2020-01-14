@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorGray"></LinearLayout>
+
+    <TextView
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:id="@+id/scan"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="扫描二维码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorGray"></LinearLayout>
+
+    <TextView
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:id="@+id/cancel"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="取消"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Orders"
+            android:textSize="25dp" />
+        <ImageView
+            android:id="@+id/scan"
+            android:layout_margin="5dp"
+            android:src="@drawable/saomiao"
+            android:layout_width="28dp"
+            android:layout_height="28dp"></ImageView>
+        <ImageView
+            android:id="@+id/admin"
+            android:layout_margin="5dp"
+            android:layout_gravity="end"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/shezhi"></ImageView>
+    </FrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/courier_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/order_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

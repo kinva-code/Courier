@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccountManageActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent">
+        <TextView
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="账号管理"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+        <ImageView
+            android:id="@+id/back"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/fanhui"
+            android:layout_width="25dp"
+            android:layout_height="25dp"></ImageView>
+        <ImageView
+            android:id="@+id/manage"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="end"
+            android:src="@drawable/shezhi"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"></ImageView>
+    </FrameLayout>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorGray"></LinearLayout>
+
+    <ListView
+        android:id="@+id/account_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorGray"
+        android:dividerHeight="1dp"></ListView>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"></LinearLayout>
+
+    <LinearLayout
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/add"
+            app:riv_oval="true"></com.makeramen.roundedimageview.RoundedImageView>
+        <TextView
+            android:id="@+id/add_account"
+            android:gravity="center_vertical"
+            android:textSize="17dp"
+            android:text="添加账号"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorGray"></LinearLayout>
+
+    <TextView
+        android:id="@+id/logout"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="#ff0000"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:text="退出当前账号"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></TextView>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"></LinearLayout>
+
+</LinearLayout>

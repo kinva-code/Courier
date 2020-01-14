@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/order_layout"
+        android:padding="5dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="15dp"
+                android:text="订单号："
+                android:layout_width="80dp"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:id="@+id/order_id"
+                android:textSize="15dp"
+                android:text="1193013640"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15dp"
+                android:text="商品："
+                android:layout_width="80dp"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:id="@+id/trade_name"
+                android:textSize="15dp"
+                android:text="纸巾"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15dp"
+                android:text="数量："
+                android:layout_width="80dp"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:id="@+id/trade_num"
+                android:textSize="15dp"
+                android:text="x1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15dp"
+                android:text="单价："
+                android:layout_width="80dp"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:id="@+id/trade_price"
+                android:textSize="15dp"
+                android:text="19.90"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15dp"
+                android:text="订单总价："
+                android:layout_width="80dp"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:id="@+id/order_price"
+                android:textSize="15dp"
+                android:text="19.90"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15dp"
+                android:text="创建时间："
+                android:layout_width="80dp"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:id="@+id/create_time"
+                android:textSize="15dp"
+                android:text="2019-11-11 15:57:55"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15dp"
+                android:text="发货时间："
+                android:layout_width="80dp"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:id="@+id/delivery_time"
+                android:textSize="15dp"
+                android:text="2019-11-11 15:57:55"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15dp"
+                android:text="收货地址："
+                android:layout_width="80dp"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:id="@+id/address"
+                android:textSize="15dp"
+                android:text="长沙市岳麓区清水路南校区28栋南"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

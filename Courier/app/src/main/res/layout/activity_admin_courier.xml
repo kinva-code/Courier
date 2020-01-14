@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminCourierActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent">
+        <TextView
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="快递员权限管理"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TextView>
+        <ImageView
+            android:id="@+id/back"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/fanhui"
+            android:layout_width="25dp"
+            android:layout_height="25dp"></ImageView>
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/courier_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutHelpActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/fanhui"
+            android:layout_width="25dp"
+            android:layout_height="25dp"></ImageView>
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pig"
+        app:riv_oval="true"></com.makeramen.roundedimageview.RoundedImageView>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:textColor="#ff0000"
+        android:layout_gravity="center"
+        android:text="1.1.0版"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="有问题请联系"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:layout_gravity="center"
+        android:text="1193013640@qq.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+</LinearLayout>
